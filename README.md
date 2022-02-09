@@ -34,4 +34,5 @@ Web интерфейс только при большом желании, дос
 В качестве БД рекомендую посмотреть Postgresql и нестандартные типы данных.
 
 ## Using
-Use (on Linux with docker) "make up", "make down" and "make logs" for start, stop and show logs respectively.
+ - Rename .env.example to .env and configure it for your environment.
+ - Use (on Linux with docker) "make up", "make down" and "make logs" for start, stop and show logs respectively.
