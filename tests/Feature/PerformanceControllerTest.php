@@ -51,28 +51,48 @@ class PerformanceControllerTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_show()
+    /**
+     * Test for show method.
+     *
+     * @return void
+     */
+    public function test_show(): void
     {
         $response = $this->get('api/performance/1');
 
         $response->assertStatus(200);
     }
 
-    public function edit()
+    /**
+     * Test for edit method.
+     *
+     * @return void
+     */
+    public function test_edit(): void
     {
         $response = $this->get('api/performance/1/edit');
 
         $response->assertStatus(404);
     }
 
-    public function update()
+    /**
+     * Test for update method.
+     *
+     * @return void
+     */
+    public function test_update(): void
     {
         $response = $this->put('api/performance/1');
 
         $response->assertStatus(404);
     }
 
-    public function test_destroy()
+    /**
+     * Test for destroy method.
+     *
+     * @return void
+     */
+    public function test_destroy(): void
     {
         $response = $this->delete('api/performance/-1');
 
