@@ -12,6 +12,20 @@ use App\Http\Resources\PerformanceResource;
 class PerformanceController extends Controller
 {
     /**
+     *
+     * @Note about REST-methods (query / method)
+     *
+     * Route::get('/resourceName',                 'ControllerName@index');
+     * Route::get('/resourceName/{resource}',      'ControllerName@show');
+     * Route::get('/resourceName/create',          'ControllerName@create');
+     * Route::get('/resourceName/{resource}/edit', 'ControllerName@edit');
+     * Route::post('/resourceName',                'ControllerName@store');
+     * Route::put('/resourceName/{resource}',      'ControllerName@update');
+     * Route::delete('/resourceName/{resource}',   'ControllerName@destroy');
+     *
+     */
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\JsonResponse
@@ -29,7 +43,7 @@ class PerformanceController extends Controller
      */
     public function create()
     {
-        return response()->json('Only api used.');
+        return response()->json('Only api used.', 404);
     }
 
     /**
@@ -97,7 +111,7 @@ class PerformanceController extends Controller
      */
     public function edit(Performance $performance)
     {
-        return response()->json('Not available.');
+        return response()->json('Not available.', 404);
     }
 
     /**
@@ -109,7 +123,7 @@ class PerformanceController extends Controller
      */
     public function update(Request $request, Performance $performance)
     {
-        return response()->json('Not available.');
+        return response()->json('Not available.', 404);
     }
 
     /**
