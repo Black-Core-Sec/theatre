@@ -6,6 +6,10 @@ use Tests\TestCase;
 use Illuminate\Http\Response;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
+/**
+ * @NOTE This is Feature test example and this not cover all situation
+ * @TODO Need to extend test variants
+ */
 class PerformanceControllerTest extends TestCase
 {
 
